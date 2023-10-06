@@ -81,6 +81,7 @@ footer {
     text-align: center;
     color: var(--white);
     justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer a {
