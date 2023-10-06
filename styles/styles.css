@@ -76,6 +76,7 @@ a {
 footer {
     display: flex;
     flex-direction: row;
+    margin-top: auto;
     padding: 10px;
     background-color: var(--header-color);
     text-align: center;
