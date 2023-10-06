@@ -72,3 +72,22 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: var(--header-color);
+    text-align: center;
+    color: var(--white);
+    justify-content: space-around;
+}
+
+footer a {
+    display: inline-block;
+    color: var(--white);
+}
+
+footer a:hover{
+    color: var(--accent-color);
+}
