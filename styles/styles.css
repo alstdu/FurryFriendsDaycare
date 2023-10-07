@@ -6,7 +6,7 @@
     --text-color: #0D2227;
     --background-color: #fff;
     --accent-color: #F0C152;
-    --header-color: #187199;
+    --banner-color: #187199;
     --sidebar-color: #63BBE3;
     --button-color: #F9938E;
     --white: #FFF;
@@ -27,7 +27,7 @@ header {
     align-items: center;
     font-size: 1.25em;
     padding: 0em;
-    background-color: var(--header-color);
+    background-color: var(--banner-color);
 }
 
 nav {
@@ -71,4 +71,25 @@ a {
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    padding: 10px;
+    background-color: var(--banner-color);
+    text-align: center;
+    color: var(--white);
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    display: inline-block;
+    color: var(--white);
+}
+
+footer a:hover{
+    color: var(--accent-color);
 }
