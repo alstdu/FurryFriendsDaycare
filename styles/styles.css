@@ -3,13 +3,14 @@
 }
 
 :root {
-    --text-color: #0D2227;
+    --text-color: #000;
     --background-color: #fff;
     --accent-color: #F0C152;
     --banner-color: #187199;
     --sidebar-color: #63BBE3;
-    --button-color: #F9938E;
-    --white: #FFF;
+    --button-color: #187199;
+    --card-color: var(--background-color);
+    --white: #fff;
 }
 
 body {
@@ -71,6 +72,49 @@ a {
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+main {
+    margin: auto;
+    padding: 1em;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* TODO: consider moving card-related styling to a seperate file */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 1em;
+    padding: 1em;
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: center;
+    border-radius: 0.25em;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 8px;
+}
+
+.card > button {
+    margin-top: auto;
+}
+
+button {
+    border: none;
+    outline: unset;
+    background-color: unset;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+}
+
+.filled-button {
+    background-color: var(--button-color);
+    color: var(--white);
 }
 
 footer {
