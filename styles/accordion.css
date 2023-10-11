@@ -7,15 +7,26 @@
 }
 
 .accordion-list > dt {
-    border: 1px solid black;
+    margin-top: 1em;
 }
 
 .accordion-list > dt > button {
     padding: 1em;
+    width: 100%;
+    border: 1px solid black;
+    text-align: unset;
+    font-size: unset;
+}
+
+.accordion-list > dt > button:hover {
+    background-color: var(--button-hover);
 }
 
 .accordion-list > dd {
     border: 1px solid black;
+    border-top: none;
+    /* color: var(--button-color); */
     padding: 1em;
     margin: 0;
+    font-weight: lighter;
 }

@@ -9,6 +9,7 @@
     --banner-color: #187199;
     --sidebar-color: #63BBE3;
     --button-color: #187199;
+    --button-hover: rgb(226, 228, 232);
     --card-color: var(--background-color);
     --white: #fff;
 }
@@ -121,6 +122,8 @@ button {
     border: none;
     outline: unset;
     background-color: unset;
+    font-family: inherit;
+    font-weight: unset;
 }
 
 .button {
@@ -132,6 +135,16 @@ button {
 .filled-button {
     background-color: var(--button-color);
     color: var(--white);
+}
+
+.outline-button {
+    color: var(--white);
+    margin: 0.5em;
+    border: 1px solid var(--white);
+}
+
+header > .outline-button:hover {
+    background-color: var(--accent-color);
 }
 
 footer {
