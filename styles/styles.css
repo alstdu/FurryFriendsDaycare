@@ -66,6 +66,11 @@ a {
     text-decoration: none;
 }
 
+.logo {
+    width: 200px;
+    height: auto;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
