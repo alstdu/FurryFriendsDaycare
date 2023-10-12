@@ -3,12 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Lexi Dugo, Manh Ellis, Stella Park, Myta Palo, Kimia Ashrafi">
+        <meta name="author" content="Lexi Dugo, Manh Ellis, Stella Park">
         <meta name="description" content="This page tells you about
     our company, Furry Friends Daycare.">
         <meta name="keywords"
             content="furry friends daycare, pet daycare, doggy daycare, cat daycare, boarding, about us, about, learn more, information">
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/profiles.css">
+        <link rel="stylesheet" href="./styles/accordion.css">
         <title>About Us</title>
     </head>
     <body class="flex-column">
@@ -28,14 +30,149 @@
             <img src="" class="social-icon">
             <img src="" class="social-icon">
             <img src="" class="social-icon">
-            <button>Booking</button>
-            <div class="hamburger">
-                <div class="bun top"></div>
-                <div class="patty"></div>
-                <div class="bun bottom"></div>
-            </div>
+            <button class="button outline-button">Booking</button>
         </header>
-        <footer class="flex-row">
+        <!-- TODO: use semantic tags instead of divs -->
+        <main>
+            <h1>About Us</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>History</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta dolores numquam odit
+                        corporis perspiciatis quod qui, laudantium eaque blanditiis, excepturi aliquam iusto fugiat sit
+                        iste vel nihil cumque reiciendis!</p>
+                    <button class="button filled-button">Learn More</button>
+                </div>
+                <div class="card">
+                    <h2>Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti consequatur doloremque
+                        aliquam consequuntur? Odio veniam magni repudiandae eum voluptatem. Quaerat, perferendis? Nulla
+                        voluptates beatae consectetur maiores voluptas numquam minus?</p>
+                    <button class="button filled-button">Learn More</button>
+                </div>
+            </div>
+            <h1>Meet The Team</h1>
+            <!-- TODO: add content when recieved -->
+            <p class="information-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum modi, autem ipsa
+                excepturi accusantium quas pariatur soluta, placeat a eaque voluptates doloremque iste inventore porro
+                ratione sed officiis aliquam nobis.</p>
+            <div class="profile-layout">
+                <div class="profile">
+                    <img src="https://placehold.co/20" alt="placeholder-profile-photo" class="profile-photo">
+                    <span class="profile-caption">John Doe</span>
+                    <span class="profile-subcaption">Developer</span>
+                </div>
+                <div class="profile">
+                    <img src="https://placehold.co/20" alt="placeholder-profile-photo" class="profile-photo">
+                    <span class="profile-caption">John Doe</span>
+                    <span class="profile-subcaption">Developer</span>
+                </div>
+                <div class="profile">
+                    <img src="https://placehold.co/20" alt="placeholder-profile-photo" class="profile-photo">
+                    <span class="profile-caption">John Doe</span>
+                    <span class="profile-subcaption">Developer</span>
+                </div>
+                <div class="profile">
+                    <img src="https://placehold.co/20" alt="placeholder-profile-photo" class="profile-photo">
+                    <span class="profile-caption">John Doe</span>
+                    <span class="profile-subcaption">Developer</span>
+                </div>
+                <div class="profile">
+                    <img src="https://placehold.co/20" alt="placeholder-profile-photo" class="profile-photo">
+                    <span class="profile-caption">John Doe</span>
+                    <span class="profile-subcaption">Developer</span>
+                </div>
+                <div class="profile">
+                    <img src="https://placehold.co/20" alt="placeholder-profile-photo" class="profile-photo">
+                    <span class="profile-caption">John Doe</span>
+                    <span class="profile-subcaption">Developer</span>
+                </div>
+                <div class="profile">
+                    <img src="https://placehold.co/20" alt="placeholder-profile-photo" class="profile-photo">
+                    <span class="profile-caption">John Doe</span>
+                    <span class="profile-subcaption">Developer</span>
+                </div>
+                <div class="profile">
+                    <img src="https://placehold.co/20" alt="placeholder-profile-photo" class="profile-photo">
+                    <span class="profile-caption">John Doe</span>
+                    <span class="profile-subcaption">Developer</span>
+                </div>
+            </div>
+            <h1>Frequently Asked Questions</h1>
+            <p class="information-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste molestias
+                perferendis sint autem temporibus? Dolores, qui saepe sed hic quod praesentium ut at amet omnis
+                voluptates suscipit provident, sint quis!</p>
+            <div>
+                <dl id="faq" class="accordion-list">
+                    <dt>
+                        <button id="accordion-header-1" aria-expanded="false" aria-controls="accordion-panel-1"
+                            data-accordion-header>How can I get a pet-sitting service refund?</button>
+                    </dt>
+                    <dd id="accordion-panel-1" aria-labelledby="accordion-header-1" hidden>
+                        If you need a refund for our pet-sitting services, please contact our 24/7 customer support team
+                        via
+                        email/phone/live chat. We will review your request in accordance with our refund policy. You can
+                        find our refund policy in the menu on our website or by clicking here. Please provide details
+                        about
+                        the service and the reason for the refund request to make the process smoother.
+                    </dd>
+                    <dt>
+                        <button id="accordion-header-2" aria-expanded="false" aria-controls="accordion-panel-2"
+                            data-accordion-header>How can I access information about a specific pet sitter? Can I check
+                            their past
+                            reviews?</button>
+                    </dt>
+                    <dd id="accordion-panel-2" aria-labelledby="accordion-header-2" hidden>
+                        You can get all information about our pet sitters by accessing the “service” page on our
+                        website.
+                        There, you&apos;ll find profiles for each of our experienced sitters including their
+                        qualifications,
+                        experience, and past reviews from satisfied clients.
+                    </dd>
+                    <dt>
+                        <button id="accordion-header-3" aria-expanded="false" aria-controls="accordion-panel-3"
+                            data-accordion-header>How far in advance should I book pet-sitting services to ensure
+                            availability?</button>
+                    </dt>
+                    <dd id="accordion-panel-3" aria-labelledby="accordion-header-3" hidden>
+                        We highly recommend booking any type of pet-sitting services we provide at least 5 days before
+                        you
+                        need them. Our availability can vary during peak seasons like Summer (June to August). Early
+                        booking
+                        ensures you get the dates you want, and it helps us plan for your pet&apos;s care.
+                    </dd>
+                    <dt>
+                        <button id="accordion-header-4" aria-expanded="false" aria-controls="accordion-panel-4"
+                            data-accordion-header>Can I request updates or photos of my pet while I&apos;m
+                            away?</button>
+                    </dt>
+                    <dd id="accordion-panel-4" aria-labelledby="accordion-header-4" hidden>
+                        Yes! We understand how much you care about your pet, and that you want to stay connected with
+                        your
+                        pet. You can request updates, photos, or videos of your pet&apos;s actvities while you&apos;re
+                        away.
+                        Our
+                        sitters will be happy to provide regular updates to you. Please leave a comment or message when
+                        you
+                        book our service.
+                    </dd>
+                    <dt>
+                        <button id="accordion-header-5" aria-expanded="false" aria-controls="accordion-panel-5"
+                            data-accordion-header>Do you offer any special services for pets with specific needs or
+                            medical
+                            requirements?</button>
+                    </dt>
+                    <dd id="accordion-panel-5" aria-labelledby="accordion-header-5" hidden>
+                        Yes! We are committed to providing personalized care for pets with specific needs or medical
+                        requirements. Please let us know the details of your pet&apos;s needs during the booking process
+                        or
+                        contact us in advance. Our experienced sitters are trained to handle various situations such as
+                        managing medications and providing specialized care.
+                    </dd>
+                </dl>
+            </div>
+        </main>
+        <footer>
             <div class="copyright-footer">
                 <p>Copyright &copy; Furry Friends Daycare<br>2023</p>
             </div>
@@ -58,5 +195,17 @@
                 <a href="#">YouTube</a>
             </div>
         </footer>
+        <script>
+            // TODO: add this to it's own script file
+            const accordionHeaders = document.querySelectorAll('[data-accordion-header]');
+            accordionHeaders.forEach(accordionHeader => {
+                let target = accordionHeader.parentElement.nextElementSibling;
+                accordionHeader.addEventListener('click', () => {
+                    let expanded = accordionHeader.getAttribute('aria-expanded') === 'true';
+                    accordionHeader.setAttribute('aria-expanded', !expanded);
+                    target.hidden = expanded;
+                });
+            });
+        </script>
     </body>
 </html>
