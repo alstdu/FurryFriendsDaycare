@@ -12,3 +12,9 @@
     flex-shrink: 0;
     min-height: 25em;
 }
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
