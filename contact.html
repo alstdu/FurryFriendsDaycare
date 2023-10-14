@@ -9,6 +9,7 @@
         <meta name="keywords"
             content="contact, contact us, form, connect, connect with us, questions, faq, furry friends daycare, pet daycare, doggy daycare, cat daycare, boarding">
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/contact.css">
         <title>Contact</title>
     </head>
     <body class="flex-column">
@@ -34,6 +35,33 @@
                 <div class="bun bottom"></div>
             </div>
         </header>
+        
+        <div class="contact-container flex-row">
+            <div class="imgContainer">
+                <img src="./img/Asset_9@2x.webp" alt="">
+            </div>
+            <div class="inputContainer">
+                <div class="inputRow">
+                    <!-- Name input -->
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="inputRow">
+                    <!-- Email input with pattern validation -->
+                    <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Email">
+                </div>
+                <div class="inputRow">
+                    <!-- Message textarea -->
+                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                </div>
+                <div class="inputRow">
+                    <!-- Send button -->
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+        
+        
+            
         <footer>
             <div class="copyright-footer">
                 <p>Copyright &copy; Furry Friends Daycare<br>2023</p>
