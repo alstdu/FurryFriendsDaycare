@@ -7,7 +7,7 @@
     --background-color: #fffffc;
     --accent-color: #F0C152;
     --banner-color: #187199;
-    --sidebar-color: #63BBE3;
+    --sidebar-color: rgb(99, 187, 227);
     --button-color: #187199;
     --button-hover: rgb(226, 228, 232);
     --card-color: var(--background-color);

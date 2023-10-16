@@ -10,11 +10,12 @@
         <meta name="keywords"
             content="furry friends daycare, pet daycare, doggy daycare, cat daycare, boarding, pets, pet services, hotel, pet, cat, dog, babysitting, homepage, home">
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/homepage.css">
         <title>Home</title>
     </head>
     <body class="flex-column">
         <header>
-            <img src="" class="logo">
+            <img src="./images/mainlogo.png" class="logo">
             <nav>
                 <ul>
                     <a href="#">Home</a>
@@ -28,13 +29,64 @@
             <img src="" class="social-icon">
             <img src="" class="social-icon">
             <img src="" class="social-icon">
-            <button>Booking</button>
-            <div class="hamburger">
-                <div class="bun top"></div>
-                <div class="patty"></div>
-                <div class="bun bottom"></div>
-            </div>
+            <button class="button outline-button">Booking</button>
         </header>
+        <div class="homepage-banner"
+            style="background: linear-gradient(rgba(99, 187, 227, 0.5), rgba(99, 187, 227, 0.5)), url('images/pexels-blue-bird-7210352.jpg'); background-size: cover;">
+            <h1>Welcome To <span style="color: var(--accent-color);">Furry Friends</span> Daycare</h1>
+            <div class="check-your-date-form">
+                <h2>Check Your Date</h2>
+                <p><b>Start Date</b></p>
+                <div class="inputRow">
+                    <input type="date" id="start" name="start" value="2023-10-01" min="2023-10-01" max="2023-12-31">
+                </div>
+                <p><b>End Date</b></p>
+                <div class="inputRow">
+                    <input type="date" id="end" name="end" value="2023-10-01" min="2023-10-01" max="2024-12-31">
+                </div>
+                <select id="service-select">
+                    <option value="">--Please choose a service--</option>
+                    <option value="daycare">Daycare</option>
+                    <option value="boarding">Boarding</option>
+                    <option value="house-sitting">House-sitting</option>
+                </select>
+                <div class="inputRow">
+                    <button type="submit" class="button outline-button">Check</button>
+                </div>
+            </div>
+        </div>
+        <main>
+            <!-- These should probably be IDs not classes -->
+            <h2>What We Offer</h2>
+            <div class="card-container">
+                <div class="card" style="background-color: var(--banner-color);"></div>
+                <div class="card" style="background-color: var(--banner-color);"></div>
+                <div class="card" style="background-color: var(--banner-color);"></div>
+            </div>
+            <div class="homepage-testimonials-section">
+                <div>
+                    <h2>Why People Love Furry Friends Daycare</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum veritatis nostrum, totam
+                        vitae
+                        debitis iusto? Culpa debitis sit praesentium placeat corrupti, sint, suscipit porro, eaque
+                        provident
+                        adipisci harum veritatis!</p>
+                    <button class="button filled-button">button</button>
+                </div>
+                <div>
+                    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis voluptas eligendi hic eum adipisci incidunt sequi dolores repellat, molestias quasi rerum ea facilis officia itaque iusto dolore est delectus.</div>
+                    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim impedit id harum facere, praesentium dolores ipsum, aut officia quisquam optio maiores non voluptatum incidunt reiciendis. Aperiam ullam quo eum?</div>
+                </div>
+            </div>
+            <div class="homepage-mission-statement">
+                <!-- background image -->
+                <div class="card">
+                    <h2>Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eos amet nam quisquam corporis corrupti nisi, ex labore reprehenderit sequi omnis id, recusandae cum magni earum dicta? Obcaecati, eum reiciendis.</p> 
+                    </div>
+            </div>
+            <div class="email-signup"></div>
+        </main>
         <footer>
             <div class="copyright-footer">
                 <p>Copyright &copy; Furry Friends Daycare<br>2023</p>

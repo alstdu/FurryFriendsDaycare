@@ -1,0 +1,53 @@
+.check-your-date-form {
+display: flex;
+min-width: 350px;
+margin-top: 1em;
+margin-bottom: 1em;
+padding: 15px;
+flex-direction: column;
+align-items: center;
+border-radius: 0.25em;
+background-color: var(--banner-color);
+box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 8px;
+color: var(--white);
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.inputRow {
+    display: flex;
+    width: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-banner {
+    display: flex;
+    width: 100%;
+    color: var(--white);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.homepage-banner h1 {
+    text-shadow: 2px 2px 5px var(--text-color);
+}
+
+.homepage-testimonials-section {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+}
+
+.homepage-testimonials-section button {
+    margin: 1em;
+}
