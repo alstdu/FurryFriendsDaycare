@@ -10,6 +10,7 @@
         <meta name="keywords"
             content="furry friends daycare, pet daycare, doggy daycare, cat daycare, boarding, pets, pet services, hotel, pet, cat, dog, babysitting, homepage, home">
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/homepage.css">
         <title>Home</title>
     </head>
     <body class="flex-column">
@@ -28,12 +29,29 @@
             <img src="" class="social-icon">
             <img src="" class="social-icon">
             <img src="" class="social-icon">
-            <button>Booking</button>
+            <button class="button outline-button">Booking</button>
         </header>
-        <div class="homepage-banner">
+        <div class="homepage-banner" >
             <h1>Welcome To Furry Friends Daycare</h1>
-            <div>
-                <button class=""></button>
+            <div class="check-your-date-form">
+                <h2>Check Your Date</h2>
+                <p><b>Start Date</b></p>
+                <div class="inputRow">
+                    <input type="date" id="start" name="start" value="2023-10-01" min="2023-10-01" max="2023-12-31">
+                </div>
+                <p><b>End Date</b></p>
+                <div class="inputRow">
+                    <input type="date" id="end" name="end" value="2023-10-01" min="2023-10-01" max="2024-12-31">
+                </div>
+                <select id="service-select">
+                    <option value="">--Please choose a service--</option>
+                    <option value="daycare">Daycare</option>
+                    <option value="boarding">Boarding</option>
+                    <option value="house-sitting">House-sitting</option>
+                </select>
+                <div class="inputRow">
+                    <button type="submit" class="button outline-button">Check</button>
+                </div>
             </div>
         </div>
         <footer>
