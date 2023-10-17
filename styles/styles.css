@@ -119,7 +119,7 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 8px;
 }
 
-.card > button {
+.card>button {
     margin-top: auto;
 }
 
@@ -148,8 +148,48 @@ button {
     border: 1px solid var(--white);
 }
 
-header > .outline-button:hover {
+header>.outline-button:hover {
     background-color: var(--accent-color);
+}
+
+/* TODO: consider moving form styling to its own sheet */
+/* Style the form element with a border around it */
+.email-form {
+    margin-top: 2em;
+    border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type=text],
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
 }
 
 footer {
@@ -168,6 +208,6 @@ footer a {
     color: var(--white);
 }
 
-footer a:hover{
+footer a:hover {
     color: var(--accent-color);
 }

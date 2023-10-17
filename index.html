@@ -34,7 +34,7 @@
         <div class="homepage-banner"
             style="background: linear-gradient(rgba(99, 187, 227, 0.5), rgba(99, 187, 227, 0.5)), url('images/pexels-blue-bird-7210352.jpg'); background-size: cover;">
             <h1>Welcome To <span style="color: var(--accent-color);">Furry Friends</span> Daycare</h1>
-            <div class="check-your-date-form">
+            <form class="check-your-date-form">
                 <h2>Check Your Date</h2>
                 <p><b>Start Date</b></p>
                 <div class="inputRow">
@@ -53,7 +53,7 @@
                 <div class="inputRow">
                     <button type="submit" class="button outline-button">Check</button>
                 </div>
-            </div>
+            </form>
         </div>
         <main>
             <!-- These should probably be IDs not classes -->
@@ -66,26 +66,58 @@
             <div class="homepage-testimonials-section">
                 <div>
                     <h2>Why People Love Furry Friends Daycare</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum veritatis nostrum, totam
-                        vitae
-                        debitis iusto? Culpa debitis sit praesentium placeat corrupti, sint, suscipit porro, eaque
-                        provident
-                        adipisci harum veritatis!</p>
+                    <p>Furry Friends Daycare is adored by pet owners because we treat your pets as if they were our own,
+                        providing the love, attention, and care that they deserve. Our commitment to your pet's
+                        well-being is why people keep coming back to us, time and time again.</p>
                     <button class="button filled-button">button</button>
                 </div>
                 <div>
-                    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis voluptas eligendi hic eum adipisci incidunt sequi dolores repellat, molestias quasi rerum ea facilis officia itaque iusto dolore est delectus.</div>
-                    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim impedit id harum facere, praesentium dolores ipsum, aut officia quisquam optio maiores non voluptatum incidunt reiciendis. Aperiam ullam quo eum?</div>
+                    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis voluptas
+                        eligendi hic eum adipisci incidunt sequi dolores repellat, molestias quasi rerum ea facilis
+                        officia itaque iusto dolore est delectus.</div>
+                    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim impedit
+                        id harum facere, praesentium dolores ipsum, aut officia quisquam optio maiores non voluptatum
+                        incidunt reiciendis. Aperiam ullam quo eum?</div>
                 </div>
             </div>
             <div class="homepage-mission-statement">
                 <!-- background image -->
                 <div class="card">
                     <h2>Our Mission</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eos amet nam quisquam corporis corrupti nisi, ex labore reprehenderit sequi omnis id, recusandae cum magni earum dicta? Obcaecati, eum reiciendis.</p> 
-                    </div>
+                    <h3>"Bringing Peace to Pet Owners, One Tail Wag at a Time"</h3><br>
+                    <p>Our mission at Furry Friends Daycare is to offer pet owners a trusted and worry-free solution
+                        for their beloved companions. We understand that life can get busy, and our goal is to make it
+                        easier for pet owners to enjoy their lives to the fullest. Whether it's a day out, a vacation,
+                        or simply a need for extra help, we provide a safe haven where pets are cared for like family.
+                    </p>
+                </div>
             </div>
-            <div class="email-signup"></div>
+            <h2>Come Visit Our Daycare Center!</h2>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.6277218412038!2d-123.12012571128783!3d49.283450997631824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867178c6f02ee1%3A0xb4e03bf432e66714!2sBCIT%20Downtown%20Campus!5e0!3m2!1sen!2sca!4v1697509310390!5m2!1sen!2sca"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form class="email-form">
+                <div class="container">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p>Keep In Touch With Us! We send out the latest news and information with us and the pet world.
+                        Plus stay tuned for sales and deals on our services.</p>
+                </div>
+
+                <div class="container" style="background-color:white">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Email address" name="mail" required>
+                    <label>
+                        <input type="checkbox" checked="checked" name="subscribe"> Weekly Newsletter
+                    </label>
+                </div>
+
+                <div class="container">
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form>
         </main>
         <footer>
             <div class="copyright-footer">
