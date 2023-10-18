@@ -11,8 +11,13 @@
     --white: #fff;
 }
 
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-.contact-container {
+}
+/* .contact-container {
     display: flex;
     flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -20,15 +25,20 @@
     overflow: hidden;
     background-color: #fff;
     align-items: stretch; /* This makes sure it stretches to the size of the inputContainer */
-}
+ */
 
 
 .imgContainer {
     flex: 1;
+    
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     overflow: hidden;
+    flex-basis: 100%;
+}
+.imgContainer p, h2{
+    text-align: left;
 }
 
 .imgContainer img {
@@ -38,7 +48,8 @@
 }
 
 .inputContainer {
-    flex: 2;
+    flex: 1;
+    flex-basis: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -79,17 +90,6 @@ input[type="email"],
    
 }
 
-.contact-container button {
-    background-color: var(--button-color);
-    color: var(--accent-color);
-    cursor: pointer;
-    font-weight: bold;
-    
-}
-
-.contact-container button:hover{
-    background-color: var(--button-hover);
-}
 /* Responsiveness */
 @media (max-width: 768px) {
     .contact-container {
