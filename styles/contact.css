@@ -17,18 +17,11 @@
     justify-content: center;
 
 }
-/* .contact-container {
-    display: flex;
-    flex-direction: row;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: #fff;
-    align-items: stretch; /* This makes sure it stretches to the size of the inputContainer */
 
 
 
-.imgContainer {
+
+.img-container {
     flex: 1;
     
     display: flex;
@@ -37,11 +30,11 @@
     overflow: hidden;
     flex-basis: 100%;
 }
-.imgContainer p, h2{
+.img-container p, h2{
     text-align: left;
 }
 
-.imgContainer img {
+.img-container img {
     max-width: 65%;
     max-height: 65%;
     object-fit: contain;
