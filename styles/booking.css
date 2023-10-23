@@ -1,0 +1,10 @@
+.section-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pet-sitting-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

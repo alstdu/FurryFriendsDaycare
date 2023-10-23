@@ -9,6 +9,7 @@
         <meta name="keywords"
             content="furry friends daycare, pet daycare, doggy daycare, cat daycare, boarding, services, book, booking, sign up, form, contact, returning customer, new customer">
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/booking.css">
         <!-- TODO: move form styles to another sheet or rename this one -->
         <link rel="stylesheet" href="./styles/homepage.css">
         <title>Booking</title>
@@ -32,30 +33,31 @@
             </div>
             <button class="button outline-button">Booking</button>
         </header>
-        <div class="homepage-banner"
-            style="background: linear-gradient(rgba(99, 187, 227, 0.5), rgba(99, 187, 227, 0.5)), url('images/pexels-blue-bird-7210352.jpg'); background-size: cover;">
-            <h1>Book <span style="color: var(--accent-color);">With Us</span></h1>
-            <form class="check-your-date-form">
-                <h2>Check Your Date</h2>
-                <p><b>Start Date</b></p>
-                <div class="inputRow">
-                    <input type="date" id="start" name="start" value="2023-10-01" min="2023-10-01" max="2023-12-31">
-                </div>
-                <p><b>End Date</b></p>
-                <div class="inputRow">
-                    <input type="date" id="end" name="end" value="2023-10-01" min="2023-10-01" max="2024-12-31">
-                </div>
-                <select id="service-select">
-                    <option value="">--Please choose a service--</option>
-                    <option value="daycare">Daycare</option>
-                    <option value="boarding">Boarding</option>
-                </select>
-                <div class="inputRow">
-                    <button type="submit" class="button outline-button">Check</button>
-                </div>
-            </form>
-        </div>
         <main>
+            <!-- TODO no inline style just fix the relative path ("../images/") and put it in a header stylesheet -->
+            <div class="homepage-banner"
+                style="background: linear-gradient(rgba(99, 187, 227, 0.5), rgba(99, 187, 227, 0.5)), url('images/pexels-blue-bird-7210352.jpg'); background-size: cover;">
+                <h1>Book <span style="color: var(--accent-color);">With Us</span></h1>
+                <form class="check-your-date-form">
+                    <h2>Check Your Date</h2>
+                    <p><b>Start Date</b></p>
+                    <div class="inputRow">
+                        <input type="date" id="start" name="start" value="2023-10-01" min="2023-10-01" max="2023-12-31">
+                    </div>
+                    <p><b>End Date</b></p>
+                    <div class="inputRow">
+                        <input type="date" id="end" name="end" value="2023-10-01" min="2023-10-01" max="2024-12-31">
+                    </div>
+                    <select id="service-select">
+                        <option value="">--Please choose a service--</option>
+                        <option value="daycare">Daycare</option>
+                        <option value="boarding">Boarding</option>
+                    </select>
+                    <div class="inputRow">
+                        <button type="submit" class="button outline-button">Check</button>
+                    </div>
+                </form>
+            </div>
             <div class="section-2">
                 <form class="pet-sitting-form">
                     <h2>Find A Sitter</h2>
