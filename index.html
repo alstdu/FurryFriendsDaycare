@@ -11,6 +11,7 @@
             content="furry friends daycare, pet daycare, doggy daycare, cat daycare, boarding, pets, pet services, hotel, pet, cat, dog, babysitting, homepage, home">
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="./styles/homepage.css">
+        <link rel="stylesheet" href="./styles/newsletter.css">
         <title>Home</title>
     </head>
     <body class="flex-column">
@@ -109,25 +110,28 @@
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <form class="email-form">
-                <div class="container">
-                    <h2>Subscribe to our Newsletter</h2>
-                    <p>Keep In Touch With Us! We send out the latest news and information with us and the pet world.
-                        Plus stay tuned for sales and deals on our services.</p>
-                </div>
+            <div class="newsletter-container">
+                <div class="confirmation-message hide">Thank you for subscribing!</div>
+                <form id="newsletter-form">
+                    <div class="form-section">
+                        <h2>Subscribe to our Newsletter</h2>
+                        <p>Keep In Touch With Us! We send out the latest news and information with us and the pet world.
+                            Plus stay tuned for sales and deals on our services.</p>
+                    </div>
 
-                <div class="container" style="background-color:white">
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Email address" name="mail" required>
-                    <label>
-                        <input type="checkbox" checked="checked" name="subscribe"> Weekly Newsletter
-                    </label>
-                </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="text" placeholder="Email address" name="mail" required>
+                        <label>
+                            <input type="checkbox" checked="checked" name="subscribe"> Weekly Newsletter
+                        </label>
+                    </div>
 
-                <div class="container">
-                    <input type="submit" value="Subscribe">
-                </div>
-            </form>
+                    <div class="form-section">
+                        <input id="newsletter-subscribe" class="submit" type="submit" value="Subscribe">
+                    </div>
+                </form>
+            </div>
         </main>
         <footer>
             <div class="copyright-footer">
@@ -152,5 +156,6 @@
                 <a href="#">YouTube</a>
             </div>
         </footer>
+        <script src="scripts/scripts.js"></script>
     </body>
 </html>
