@@ -53,6 +53,7 @@ fieldset {
 
 .selection-button input {
     appearance: none;
+    position: absolute;
 }
 
 label {
