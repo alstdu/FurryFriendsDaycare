@@ -1,0 +1,71 @@
+.section-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pet-sitting-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pet-type-selection {
+    display: flex;
+    gap: 1em;
+    background-color: #dedede;
+    width: 100%;
+    padding: 1em;
+    margin: 1em;
+    font-weight: bold;
+}
+
+.pet-sitting-form input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 1em;
+    /* note: styling checkboxes in css seems to be a hellish world of the arcane */
+    /* to make a custom checkbox is to venture down an unsanctioned path of hacks and consequences */
+    /* to make a custom checkbox is to taunt the w3c and invite their wrath */
+    /* let's be satisfied with our vanilla checkbox and leave the custom stuff to some library author */
+}
+
+.radio-select {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+fieldset {
+    border: none;
+}
+
+.selection-button {
+    background-color: #dedede;
+    display: block;
+    padding: 2em;
+    margin: 1em;
+    transition: 0.2s all linear;
+}
+
+.selection-button:has(input:checked) {
+    background-color: var(--accent-color);
+}
+
+.selection-button input {
+    appearance: none;
+    position: absolute;
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2em;
+}
+
+.date-range-input label {
+    margin: 2em;
+}
+
+.date-range-input input {
+    margin: .5em 0;
+    padding: 0.75em;
+}
