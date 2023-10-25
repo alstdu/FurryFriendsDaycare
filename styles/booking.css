@@ -18,6 +18,7 @@
     padding: 1em;
     margin: 1em;
     font-weight: bold;
+    line-height: 2em;
 }
 
 .pet-sitting-form input[type="checkbox"] {
@@ -58,7 +59,6 @@ fieldset {
 
 label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 2em;
 }
 
 .date-range-input label {
@@ -67,7 +67,6 @@ label {
 
 .date-range-input input {
     margin: .5em 0;
-    padding: 0.75em;
 }
 
 input[type=submit] {
