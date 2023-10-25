@@ -71,6 +71,18 @@ a {
     height: auto;
 }
 
+.social-icon-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 1em;
+    height: 50px;
+    width: auto;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -81,10 +93,10 @@ a {
     flex-direction: column;
 }
 
-main {
+.content-container {
     margin: auto;
     padding: 1em;
-    max-width: 1000px;
+    max-width: 1200px;
     text-align: center;
 }
 
