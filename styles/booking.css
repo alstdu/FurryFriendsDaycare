@@ -3,9 +3,21 @@
     justify-content: space-around;
 }
 
+.section-2 > * {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.section-3 {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pet-sitting-form {
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
 }
@@ -81,4 +93,36 @@ input[type=submit] {
 
 input[type=submit]:hover {
     opacity: 0.8;
+}
+
+.sitter-recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sitter-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 8px;
+    width: 16em;
+}
+
+.sitter-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.profile-caption {
+    font-weight: bold;
+}
+
+.profile-subcaption {
+    font-style: italic;
 }
