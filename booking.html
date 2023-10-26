@@ -36,17 +36,19 @@
         <main>
             <!-- TODO no inline style just fix the relative path ("../images/") and put it in a header stylesheet -->
             <div class="homepage-banner"
-                style="background: linear-gradient(rgba(99, 187, 227, 0.5), rgba(99, 187, 227, 0.5)), url('images/pexels-blue-bird-7210352.jpg'); background-size: cover;">
+                style="background: linear-gradient(rgba(99, 187, 227, 0.5), rgba(99, 187, 227, 0.5)), url('images/pexels-samson-katt-5255554.jpg'); background-size: cover; background-position: 75% 45%;">
                 <h1>Book <span style="color: var(--accent-color);">With Us</span></h1>
                 <form class="check-your-date-form">
                     <h2>In House Services</h2>
                     <p><b>Start Date</b></p>
                     <div class="inputRow">
-                        <input type="date" id="inhouse-start" name="start" value="2023-10-01" min="2023-10-01" max="2023-12-31">
+                        <input type="date" id="inhouse-start" name="start" value="2023-10-01" min="2023-10-01"
+                            max="2023-12-31">
                     </div>
                     <p><b>End Date</b></p>
                     <div class="inputRow">
-                        <input type="date" id="inhouse-end" name="end" value="2023-10-01" min="2023-10-01" max="2024-12-31">
+                        <input type="date" id="inhouse-end" name="end" value="2023-10-01" min="2023-10-01"
+                            max="2024-12-31">
                     </div>
                     <select id="service-select">
                         <option value="">--Please choose a service--</option>
@@ -76,85 +78,96 @@
 
                     <fieldset class="radio-select">
                         <label class="selection-button" for="house-sitting-button">
-                            <input type="radio" 
-                                   id="house-sitting-button"
-                                   name="service-radio-select"
-                                   value="house-sitting">
+                            <input type="radio" id="house-sitting-button" name="service-radio-select"
+                                value="house-sitting">
                             <span>House-Sitting</span>
                         </label>
                         <label class="selection-button" for="drop-in-button">
-                            <input type="radio" 
-                                    id="drop-in-button" 
-                                    name="service-radio-select" 
-                                    value="drop-in">
+                            <input type="radio" id="drop-in-button" name="service-radio-select" value="drop-in">
                             <span>Drop-In</span>
                         </label>
                         <label class="selection-button" for="daycare-button">
-                            <input type="radio" 
-                                    id="daycare-button" 
-                                    name="service-radio-select" 
-                                    value="daycare">
+                            <input type="radio" id="daycare-button" name="service-radio-select" value="daycare">
                             <span>Daycare</span>
                         </label>
                     </fieldset>
 
                     <fieldset class="date-range-input">
                         <label for="postal-code">
-                            <input type="text" 
-                                    name="postal-code">
+                            <input type="text" name="postal-code">
                             <span>Postal Code</span>
                         </label>
                         <label for="sitter-start">
-                            <input type="date" 
-                                    id="sitter-start" 
-                                    name="start-date" 
-                                    value="2023-10-01"
-                                    min="2023-10-01"
-                                    max="2024-12-31">
+                            <input type="date" id="sitter-start" name="start-date" value="2023-10-01" min="2023-10-01"
+                                max="2024-12-31">
                             <span>Start Date</span>
                         </label>
                         <label for="sitter-end">
-                            <input type="date" 
-                                    id="sitter-end" 
-                                    name="end-date" 
-                                    value="2023-10-01" 
-                                    min="2023-10-01"
-                                    max="2024-12-31">
+                            <input type="date" id="sitter-end" name="end-date" value="2023-10-01" min="2023-10-01"
+                                max="2024-12-31">
                             <span>End Date</span>
                         </label>
                     </fieldset>
 
                     <fieldset class="radio-select">
                         <label class="selection-button">
-                            <input type="radio" 
-                                   name="weight-radio-select"
-                                   value="0">
+                            <input type="radio" name="weight-radio-select" value="0">
                             <span>&le;15 lbs</span>
                         </label>
                         <label class="selection-button">
-                            <input type="radio"
-                                    name="weight-radio-select"
-                                    value="16">
+                            <input type="radio" name="weight-radio-select" value="16">
                             <span>16-40 lbs</span>
                         </label>
                         <label class="selection-button">
-                            <input type="radio"
-                                    name="weight-radio-select"
-                                    value="41">
+                            <input type="radio" name="weight-radio-select" value="41">
                             <span>41-50 lbs</span>
                         </label>
                         <label class="selection-button">
-                            <input type="radio"
-                                    name="weight-radio-select"
-                                    value="51">
+                            <input type="radio" name="weight-radio-select" value="51">
                             <span>&ge;51 lbs</span>
                         </label>
                     </fieldset>
+                    <input id="booking-submit" class="submit" type="submit" value="submit">
                 </form>
                 <div id="map">
                     <iframe
                         src="https://www.google.com/maps/d/embed?mid=1EnMW9HMM8KkTyQAiIncSFuYkkGrCZPE&hl=en&ehbc=2E312F"
-                        width="640" height="480"></iframe>
+                        width="100%" height="100%"></iframe>
+                </div>
+            </div>
+            <div class="section-3 hide">
+                <h1>Recommendations</h1>
+                <div class="sitter-recommendations">
+                    <div class="sitter-profile">
+                        <img src="./images/sitter-profiles/hudson-hintze-CXQgs12wFHc-unsplash.jpg" alt="" class="sitter-photo">
+                        <span class="profile-caption">Sarah Thompson</span>
+                        <span class="profile-subcaption">Sarah has been a pet sitter for over five years. She has worked with various animals, including dogs, cats, and small mammals. She is known for her reliability and attentiveness to the pets' needs.</span>
+                    </div>
+                    <div class="sitter-profile">
+                        <img src="./images/sitter-profiles/pexels-blue-bird-7210458.jpg" alt="" class="sitter-photo">
+                        <span class="profile-caption">Emily Walker</span>
+                        <span class="profile-subcaption">Emily has been a pet sitter for four years. She has experience with cats, birds, and reptiles. Emily is known for her gentle approach and her ability to calm anxious pets.</span>
+                    </div>
+                    <div class="sitter-profile">
+                        <img src="./images/sitter-profiles/tadeusz-lakota-tk5LWGNiWVs-unsplash.jpg" alt="" class="sitter-photo">
+                        <span class="profile-caption">James Rodriguez</span>
+                        <span class="profile-subcaption">James is an experienced pet sitter with seven years in the business. He specializes in caring for dogs of all sizes and breeds. He is trained in basic obedience and has excellent references.</span>
+                    </div>
+                    <div class="sitter-profile">
+                        <img src="./images/sitter-profiles/tamara-bellis-baKsNGGKZ3w-unsplash.jpg" alt="" class="sitter-photo">
+                        <span class="profile-caption">Melissa Foster</span>
+                        <span class="profile-subcaption">Melissa is a compassionate pet sitter with three years of experience. She specializes in caring for elderly dogs and cats, providing them with the extra attention and care they need in their later years.</span>
+                    </div>
+                    <div class="sitter-profile">
+                        <img src="./images/sitter-profiles/wade-austin-ellis-FtuJIuBbUhI-unsplash.jpg" alt="" class="sitter-photo">
+                        <span class="profile-caption">Jesse Smith</span>
+                        <span class="profile-subcaption">Jesse is a professional pet sitter with over a decade of experience. They have worked with a wide range of animals, including exotic pets and horses. They are also certified in pet first aid.</span>
+                    </div>
+                    <div class="sitter-profile">
+                        <img src="./images/sitter-profiles/wieger-stienstra-SDWbEi94QG0-unsplash.jpg" alt="" class="sitter-photo">
+                        <span class="profile-caption">Alonzo Garcia</span>
+                        <span class="profile-subcaption">Alozo is great with dogs and is flexible with hours. He loves animals and often volunteers at local shelters. He has been sitting for 2 years.</span>
+                    </div>
                 </div>
             </div>
         </main>
@@ -181,6 +194,6 @@
                 <a href="#">YouTube</a>
             </div>
         </footer>
-
+        <script src="./scripts/booking.js"></script>
     </body>
 </html>
