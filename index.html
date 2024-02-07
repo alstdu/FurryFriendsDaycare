@@ -13,6 +13,73 @@
         <link rel="stylesheet" href="./styles/homepage.css">
         <link rel="stylesheet" href="./styles/newsletter.css">
         <title>Home</title>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Furry Friends Daycare",
+                "description": "Furry Friends Daycare is a pet sitting provider that has options for both in-house care and remote services.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "555 Seymour Street",
+                    "addressLocality": "Vancouver",
+                    "addressRegion": "BC",
+                    "postalCode": "V6B 3H6",
+                    "addressCountry": "Canada"
+                },
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Vancouver"
+                },
+                "logo": "https://furryfriendsdaycare.ca/images/mainlogo.png",
+                "url": "https://furryfriendsdaycare.ca",
+                "keywords": "furry friends daycare, pet daycare, pet sitter, dog sitter, doggy daycare, cat daycare, boarding, pets, pet services, hotel, pet, cat, dog, pet sitting, homepage, home"
+                "openingHours": [
+    {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "08:00",
+        "closes": "20:00"
+    },
+    {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Tuesday",
+        "opens": "08:00",
+        "closes": "20:00"
+    },
+    {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "08:00",
+        "closes": "20:00"
+    },
+    {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "08:00",
+        "closes": "20:00"
+    },
+    {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "08:00",
+        "closes": "20:00"
+    },
+    {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "18:00"
+    },
+    {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "09:00",
+        "closes": "18:00"
+    }
+]
+            }
+        </script>
     </head>
     <body class="flex-column">
         <header>
@@ -62,35 +129,46 @@
             <div class="content-container">
                 <h2>What We Offer</h2>
                 <div class="card-container offers">
-                    <div class="card" style="background-color: var(--banner-color);"><h3>Boarding</h3>Our boarding services provide a safe
+                    <div class="card" style="background-color: var(--banner-color);">
+                        <h3>Boarding</h3>Our boarding services provide a safe
                         and clean home away from home for your pets when you are away. We prioritize that your pet stays
-                        comfortable with their spaces and receives food, exercise, and companionship from trained staff. We
-                        provide you peace of mind, knowing your pets are well-cared while you're away.</div>
-                    <div class="card" style="background-color: var(--banner-color);"><h3>Daycare</h3>Our daycare services offer supervised,
-                        interactive and fun activities for pets during their stay. They can enjoy playtime, exercise, and
+                        comfortable with their spaces and receives food, exercise, and companionship from trained staff.
+                        We
+                        provide you peace of mind, knowing your pets are well-cared while you're away.
+                    </div>
+                    <div class="card" style="background-color: var(--banner-color);">
+                        <h3>Daycare</h3>Our daycare services offer supervised,
+                        interactive and fun activities for pets during their stay. They can enjoy playtime, exercise,
+                        and
                         socialization with other furry friends. We are committed to ensuring that your pets are
                         well-attended to, receive exercise, and don't experience loneliness or boredom during their stay
                         with us.
                     </div>
-                    <div class="card" style="background-color: var(--banner-color);"><h3>House-sitting</h3>Our house-sitting services involve our
+                    <div class="card" style="background-color: var(--banner-color);">
+                        <h3>House-sitting</h3>Our house-sitting services involve our
                         trained pet-sitter coming to your home to take care of your beloved fur families. It allows your
                         pets to stay in their familiar environment, reducing stress and anxiety. House-sitting is an
-                        excellent choice for pets that are more comfortable in their own space and for owners who want their
+                        excellent choice for pets that are more comfortable in their own space and for owners who want
+                        their
                         home to appear occupied while they're away.
                     </div>
                 </div>
                 <div class="homepage-testimonials-section">
                     <div>
                         <h2>Why People Love Furry Friends Daycare</h2>
-                        <p>Furry Friends Daycare is adored by pet owners because we treat your pets as if they were our own,
+                        <p>Furry Friends Daycare is adored by pet owners because we treat your pets as if they were our
+                            own,
                             providing the love, attention, and care that they deserve. Our commitment to your pet's
                             well-being is why people keep coming back to us, time and time again.</p>
                         <button class="button filled-button">Learn More</button>
                     </div>
                     <div>
-                        <div class="card">“The pet sitters at Furry Friends Daycare are truly thoughtful and amazing. I love their special
-                            and personalized updates and care for my pet. I feel comfortable and relieved while I am away.”</div>
-                        <div class="card">“Our experience with Furry Friends Daycare has been awesome. The pet sitters are reliable
+                        <div class="card">“The pet sitters at Furry Friends Daycare are truly thoughtful and amazing. I
+                            love their special
+                            and personalized updates and care for my pet. I feel comfortable and relieved while I am
+                            away.”</div>
+                        <div class="card">“Our experience with Furry Friends Daycare has been awesome. The pet sitters
+                            are reliable
                             and well-trained. They have truly made a positive impact on our pets!”</div>
                     </div>
                 </div>
@@ -115,10 +193,11 @@
                     <form id="newsletter-form">
                         <div class="form-section">
                             <h2>Subscribe to our Newsletter</h2>
-                            <p>Keep In Touch With Us! We send out the latest news and information with us and the pet world.
+                            <p>Keep In Touch With Us! We send out the latest news and information with us and the pet
+                                world.
                                 Plus stay tuned for sales and deals on our services.</p>
                         </div>
-    
+
                         <div class="input-group">
                             <input type="text" placeholder="Name" name="name" required>
                             <input type="text" placeholder="Email address" name="mail" required>
@@ -133,7 +212,7 @@
                 </div>
             </div>
         </main>
-        
+
         <footer>
             <div class="copyright-footer">
                 <p>Copyright &copy; Furry Friends Daycare<br>2023</p>
